@@ -1,0 +1,323 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>SWAT ELITE</title>
+</head>
+<body>
+    <!--
+  <div class="navbar">
+    <img src="logo.png" alt="Your Security Team Logo">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+  </div>
+-->
+  <nav class="nav_bar" id="home" style="background-image:url('{% static 'images/img1.jpg' %}');background-repeat: no-repeat;background-size: 100%;height: 550px;">
+        <div class="main">
+    <div class="logo">
+        <a href="#home"><img src="{% static 'images/logo1.jpg' %}"></a>
+    </div>
+            <ul>
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#gallery">Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    <div class="intro">
+    <h1 class="centered-text">SWAT ELITE SECURITY</h1>
+    <h3 class="centered">Legends Of Kenya</h3>
+    <div class="intro-icon">
+      <a class="icon" href="https://twitter.com/swateliteteam1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 209"><path fill="#55acee" d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52c0 4.117.465 8.125 1.36 11.97c-43.65-2.191-82.35-23.1-108.255-54.876c-4.52 7.757-7.11 16.78-7.11 26.404c0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661c0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475c-17.975 14.086-40.622 22.483-65.228 22.483c-4.24 0-8.42-.249-12.529-.734c23.243 14.902 50.85 23.597 80.51 23.597c96.607 0 149.434-80.031 149.434-149.435c0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"/></svg>
+      </a>
+      <a class="icon" href="https://www.facebook.com/people/Jose-Sirkal/pfbid02JTRWFBoubgxgNso5ebqXp6UZbj7i6xQWsxohENWvxcgo8WS32UMMSKYZiKthYzgUl/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.347-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.958 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825"/></svg>
+      </a>
+      <a class="icon" href="https://www.instagram.com/swat_security_team/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"/><rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"/><path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604h.031Zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563v.025Zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12v.004Zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355h.002Zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334Z"/><defs><radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1" gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse"><stop stop-color="#FD5"/><stop offset=".1" stop-color="#FD5"/><stop offset=".5" stop-color="#FF543E"/><stop offset="1" stop-color="#C837AB"/></radialGradient><radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1" gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientUnits="userSpaceOnUse"><stop stop-color="#3771C8"/><stop offset=".128" stop-color="#3771C8"/><stop offset="1" stop-color="#60F" stop-opacity="0"/></radialGradient></defs></g></svg>
+      </a>
+      </div>
+
+    </div>
+  </nav>
+<!--start of section 2-->
+
+  <div class="landing-section">
+    <div class="container">
+        <center>
+            <h1>Welcome to Your Security Team Firm</h1>
+            <p>Swat Elite Security Team is a group of private proffesional security providers able to meet your security details.
+              <br>
+              We operate in all 47 counties of Kenya, and with wider reach anywhere anytime.
+              <br>
+              We are located in Busia Town, opposite Drimz Hotel.
+
+            </p>
+            <a href="https://www.google.com/maps/place/0%C2%B031'28.4%22N+34%C2%B010'18.2%22E/@0.524555,34.171733,15z/data=!4m4!3m3!8m2!3d0.524555!4d34.171733?force=pwa&source=mlapk" class="cta-button"><b>Visit Us Today</b></a>
+        </center>
+    </div>
+  </div>
+
+  <section class="services-section" id="services-section">
+    <div>
+
+
+      <h2><b><u>Our Services</u></b></h2>
+    <div class="row">
+
+      <div class="service">
+        <h3>VIP Escort</h3>
+        <img class="img_service"  src="{% static 'images/vip.jpg' %}" alt="VIP Escort Service">
+        <p>Vip Escort Services:
+            Our expert crowd management services prioritize safety and efficiency for events and public spaces.
+             With a trained team of specialists, we ensure the smooth operation and well-being of attendees. 
+             From concerts to conferences, our comprehensive crowd management plans address crowd dynamics and 
+             implement access control measures. We excel in assessing crowd sizes, monitoring entry points, and
+              maintaining orderly queues. With exceptional customer service and professional attire,
+               our team provides a positive experience for attendees. Trust us to handle any situation with professionalism, 
+               equipped with effective communication tools. 
+            Contact us today for reliable crowd management services, creating a safe and enjoyable environment for all.</p>
+      </div>
+
+
+      <div class="service">
+        <h3>Crowd Management</h3>
+        <img class="img_service" src="{% static 'images/2.jpg' %}" alt="Celebrities Service">
+        <p>Crowd Management Services:
+            Our expert crowd management services prioritize safety and efficiency for events and public spaces.
+             With a trained team of specialists, we ensure the smooth operation and well-being of attendees. 
+             From concerts to conferences, our comprehensive crowd management plans address crowd dynamics and
+              implement access control measures. We excel in assessing crowd sizes, monitoring entry points, 
+              and maintaining orderly queues. With exceptional customer service and professional attire, 
+              our team provides a positive experience for attendees. Trust us to handle any situation with professionalism,
+               equipped with effective communication tools. Contact us today for reliable crowd management services, 
+               creating a safe and enjoyable environment for all.</p>
+      </div>
+
+
+      <div class="service">
+        <h3>Personal Body Guard</h3>
+        <img class="img_service" src="{% static 'images/f.jpg' %}" alt="Personal Body Guard Service">
+        <p>Personal Bodyguard Service:
+            Our personal bodyguard service offers unrivaled protection and assurance for individuals seeking top-tier security. 
+            With a team of highly trained and experienced bodyguards, we prioritize your safety in every situation. 
+            Our experts excel in risk assessment, threat detection, and conflict resolution, ensuring proactive security measures. 
+            Whether you require protection during public events, travel, or everyday activities, 
+            our discreet and adaptable bodyguards are dedicated to meeting your unique needs. Rest assured,
+             our professionals undergo rigorous screening and training to provide the utmost professionalism and confidentiality. 
+             Experience the peace of mind that comes with having a trusted personal bodyguard by your side. 
+            Contact us today to discuss your security requirements and discover the elite level of protection we offer..</p>
+      </div>
+    </div>
+    </section> 
+    <section class="services-section-one" >
+      <div class="row">
+
+
+      <div class="service">
+        <h3>All Security Services</h3>
+        <img class="img_service" src="{% static 'images/y.jpg' %}" alt="All Security Services">
+        <p>All Security Services:
+            Our expert security solutions offer comprehensive protection for individuals, properties, and assets. 
+            With highly trained personnel and advanced technologies, we ensure the utmost safety and peace of mind. 
+            From manned guarding to surveillance systems, our tailored security plans mitigate risks and prevent incidents. 
+            Contact us for reliable security services tailored to your specific needs.</p>
+      </div>
+
+
+      <div class="service">
+        <h3>Event Planners</h3>
+        <img class="img_service" src="{% static 'images/event.jpg' %}" alt="Event Planners Service">
+        <p>Our dedicated event planning team brings creativity and precision to every occasion. 
+            With meticulous attention to detail and extensive industry knowledge, 
+            we curate unforgettable experiences tailored to your vision. From corporate events to weddings and social gatherings,
+             our event planners handle everything from venue selection and decor to vendor management and logistics.
+             Trust us to deliver seamless events that exceed your expectations.</p>
+      </div>
+
+
+      <div class="service">
+        <h3>We Train</h3>
+        <img class="img_service" src="{% static 'images/train.jpeg' %}" alt="Training Service">
+        <p>Our comprehensive training programs equip individuals and organizations with the knowledge and skills needed to excel.
+             With experienced trainers and practical, hands-on approaches, we offer customized training solutions in various fields. From professional development to technical training, our programs are designed to enhance performance and achieve goals. 
+            Invest in your success with our result-driven training services that empower individuals and teams to reach their full potential.</p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="section-gallery" id="gallery">
+    <h2 >Gallery</h2>
+    <div class="gallery">
+    
+      <script>
+          var i = 0;
+          var images = [];
+          var time = 3000;
+  
+          images[0]='static/images/img1.jpg';
+          images[1]='static/images/d.jpg';
+          images[2]='static/images/qe.jpg';
+          images[3]='static/images/7.jpg';
+          images[4]='static/images/a.jpg';
+          images[5]='static/images/r.jpg';
+          images[6]='static/images/s.jpg';
+          images[7]='static/images/t.jpg';
+          images[8]='static/images/qw.jpg';
+          images[9]='static/images/q.jpg';
+  
+          function changeImg(){
+              document.slide.src = images[i];
+  
+              if(i < images.length - 1){
+                  i++;
+              }else{
+                  i=0;
+              }
+              setTimeout("changeImg()", time);
+          }
+          window.onload = changeImg;
+      </script>
+          <style>
+            .gallery img {
+              max-width: 100%;
+              max-height: 100%;
+              border-radius: 8px;
+            }
+          </style>
+      <img name="slide">
+
+      </div>
+  
+
+  </section>
+  <section class="services-section">
+
+
+    <h2><u><b>Our Team</b></u></h2>
+  <div class="row">
+
+    <div class="service">
+      <h3>Chairman</h3>
+      <img class="img_service"  src="{% static 'images/chair.jpg' %}" alt="Chairman">
+      <p>Chairperson Swat Elite Security:
+          An expert and professional in matters security.
+           Operates with decorum and is always up to his tasks.
+           Serves as the current Chairperson Swat Elite Security<br>
+           <b>
+            <p style="color: red;">0719115184</p>
+           </b> 
+           .</p>
+    </div>
+
+
+    <div class="service">
+      <h3>Member</h3>
+      <img class="img_service" src="{% static 'images/sec.jpg' %}" alt="Secretary">
+      <p>A denior member Swat Elite Security:
+          Has alot of experience gained from his previous operations.
+           He is as well a trained team specialist.</p>
+    </div>
+
+
+    <div class="service">
+      <h3>Secretary</h3>
+      <img class="img_service" src="{% static 'images/member.jpg' %}" alt="Member">
+      <p>Secretary Swat Elite Security:
+          Proffesional in security and always ready to serve. 
+          Always prioritizing your safety in every situation.</p>
+    </div>
+  </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Talk to Us</h2>
+    <form method="post" action="mailto:swatelitesecurities@gmail.com" enctype="text/plain">
+      <div>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name" name="name" id="toemail" class="name">
+      </div>
+      <div>
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email address" name="email" id="subject" class="name">
+      </div>
+      <div class="full-width">
+        <label>Message</label><br>
+        <textarea type="text" placeholder="Enter your message" name="message" id="body" class="message"></textarea>
+      </div>
+      <button type="submit" onclick="sendEmail()" value="submit" class="btn">Submit</button>
+    </form>
+
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+      var toemail=document.getElementById("toemail").value;
+      var subject=document.getElementById("subject").value;
+      var body=document.getElementById("body").value;
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "api",
+        Password: "92021435abb9c071038e7d43be81f9df",
+        To: toemail,
+        From: toemail,
+        Subject: subject,
+        Body: body,
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+
+
+    <a class="q" href="https://twitter.com/swateliteteam1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 209"><path fill="#55acee" d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52c0 4.117.465 8.125 1.36 11.97c-43.65-2.191-82.35-23.1-108.255-54.876c-4.52 7.757-7.11 16.78-7.11 26.404c0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661c0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475c-17.975 14.086-40.622 22.483-65.228 22.483c-4.24 0-8.42-.249-12.529-.734c23.243 14.902 50.85 23.597 80.51 23.597c96.607 0 149.434-80.031 149.434-149.435c0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"/></svg>
+      Twitter
+    </a>
+    <br>
+    <a class="q" href="https://www.facebook.com/people/Jose-Sirkal/pfbid02JTRWFBoubgxgNso5ebqXp6UZbj7i6xQWsxohENWvxcgo8WS32UMMSKYZiKthYzgUl/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.347-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.958 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825"/></svg>
+        Facebook
+    </a>
+    <br>
+    <a class="q" href="https://www.instagram.com/swat_security_team/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"/><rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"/><path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604h.031Zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563v.025Zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12v.004Zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355h.002Zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334Z"/><defs><radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1" gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse"><stop stop-color="#FD5"/><stop offset=".1" stop-color="#FD5"/><stop offset=".5" stop-color="#FF543E"/><stop offset="1" stop-color="#C837AB"/></radialGradient><radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1" gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientUnits="userSpaceOnUse"><stop stop-color="#3771C8"/><stop offset=".128" stop-color="#3771C8"/><stop offset="1" stop-color="#60F" stop-opacity="0"/></radialGradient></defs></g></svg>
+        instagram
+    </a>
+    <br>
+    <a class="q" href="https:www.gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M19 10c1.13 0 2.16-.39 3-1.02V18c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10.1c-.06.32-.1.66-.1 1c0 1.48.65 2.79 1.67 3.71L12 11L5.3 6.81a.85.85 0 1 0-.9 1.44l7.07 4.42c.32.2.74.2 1.06 0l4.77-2.98c.54.19 1.1.31 1.7.31zm-3-5c0 1.66 1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3s-3 1.34-3 3z"/></svg>
+        swatelitesecurities@gmail.com
+    </a>
+    <br>
+    <a class="q">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608a17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+        0719115184/+254748850007
+    </a>
+  </section>
+  <hr>
+
+  <center class="footer">
+    <p>powered by <a href="https://www.facebook.com/simon.oneito">Simon</a> and <a href="https://twitter.com/oduorvinny">Vincent</a><br> Click to reach us out in our social media platforms</p>
+    <br>
+    <a class="icon" href="https://twitter.com/simononeito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 209"><path fill="#55acee" d="M256 25.45a105.04 105.04 0 0 1-30.166 8.27c10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52c0 4.117.465 8.125 1.36 11.97c-43.65-2.191-82.35-23.1-108.255-54.876c-4.52 7.757-7.11 16.78-7.11 26.404c0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661c0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475c-17.975 14.086-40.622 22.483-65.228 22.483c-4.24 0-8.42-.249-12.529-.734c23.243 14.902 50.85 23.597 80.51 23.597c96.607 0 149.434-80.031 149.434-149.435c0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"/></svg>
+    </a>
+    <a class="icon" href="https://www.facebook.com/vinny.rex.3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><path fill="#1877F2" d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.347-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.958 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"/><path fill="#FFF" d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825"/></svg>
+    </a>
+  </center>
+</body>
+</html>

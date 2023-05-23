@@ -1,0 +1,263 @@
+/*section 1 styles*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nav_bar{
+	background-image: url('static/images/img1.jpg');
+	height: 100svh;
+	background-size: cover;
+	background-position: center;
+  text-align: center;
+}
+
+nav div ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+nav div ul li{
+	display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+  list-style: none;
+  font-size: large;
+  color: aliceblue;
+  margin-top: 60px;
+}
+nav div ul li a{
+	text-decoration: none;
+	color: white;
+  font-size: large;
+  font-weight: 900;
+  
+	
+	/*transition: o.6s ease;*/
+}/*
+nav div ul li a:hover{
+  text-underline-position: below;
+	background-color: white;
+
+}*/
+nav div ul li::after{
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+nav div ul li:hover::after{
+  width: 100%;
+}
+.logo img{
+  float: left;
+  width: 90px;
+  height: auto;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 60px;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  body nav div .centered-text{
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  }
+  .intro-icon{
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .icon{
+    padding: 10px;
+  }
+  body nav div .centered{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  }
+  body nav div h1{
+    font-size: xxx-large;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+/*section2*/
+.services-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    }
+    .services-section-one{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    }
+        
+.row{
+  margin: 5%;
+  justify-content: space-between;
+  display: flex;
+}
+.service{
+  flex-basis: 100%;
+  background: white;
+  border-radius: 10px;
+  padding-right: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  margin: 20px;
+
+}
+
+.service:hover{
+  box-shadow: 0 0 20px 0px rgba(73, 77, 51, 0.2);
+  background-color: rgb(215, 212, 219);
+
+}
+    h2 {
+      font-size: 32px;
+      color: #333;
+    }
+    
+    h3 {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+    .img_service {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 100%; /* Add border-radius for circular shape */
+    }
+    p {
+      font-size: 16px;
+      color: #777;
+      line-height: 1.5;
+    }
+    .contacts{
+      text-align: left;
+      margin: 150px;
+      background-color: black;
+      
+    }
+    .q{
+      margin-left: 50px;
+      margin-bottom: 50px;
+
+    }
+
+    .section-gallery{
+      text-align: center;
+      margin: 200px;
+      font-size: xx-large;
+    
+      background-color: lightgrey;
+    }
+    
+    .gallery{
+      margin: 150px;
+      padding: 50px;
+    
+
+    }
+    .cta-button{
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      padding: 12px 34px;
+      background: blue;
+      position: relative;
+      cursor: pointer;
+      border-radius: 8px 8px 8px 8px;
+      margin-top: 20px;
+      
+
+    }
+.cta-button:hover{
+  background: #f44336;
+  transition: 0.5s;
+}
+.landing-section{
+  padding: 50px;
+}
+.footer{
+  background-color: black;
+  color: aliceblue;
+  text-decoration: none;
+}
+.contact{
+  background-color: #777;
+  margin: 10px;
+}
+form{
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: hsl(hue, saturation, lightness);
+  border: 4px solid hsl(hue, saturation, lightness);
+  display: grid;
+  grid-template-columns: 370px 370px;
+  gap: 1rem;
+}
+.full-width{
+  grid-column: span 2;
+
+}
+.btn{
+  background-color: blue;
+  color: azure;
+  height: 40px;
+  width: 90px;
+  border-radius: 10px 10px 10px 10px;
+
+}
+.name{
+  height: 40px;
+  width: 300px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: medium;
+}
+.message{
+  height: 100px;
+  width: 700px;
+  font-size: large;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+}
+.btn:hover{
+  background-color: #f44336;
+}
+/* Styles for screens smaller than 600px (typical mobile devices) */
+@media (max-width: 600px) {
+  /* Your mobile styles here */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
